@@ -6,17 +6,17 @@ public class ThreadControl_and_DeadlockExample {
     private static final Object lock2 = new Object();
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
-        // System.out.println("1. Demonstrating Thread Interruption:");
-        // threadInterruptionExample();
+        System.out.println("1. Demonstrating Thread Interruption:");
+        threadInterruptionExample();
 
-        // System.out.println("\n2. Demonstrating Fork/Join Framework:");
-        // forkJoinExample();
+        System.out.println("\n2. Demonstrating Fork/Join Framework:");
+        forkJoinExample();
 
         System.out.println("\n3. Demonstrating Deadlock Scenario:");
         deadlockScenario();
 
-        // System.out.println("\n4. Demonstrating Deadlock Prevention:");
-        // deadlockPrevention();
+        System.out.println("\n4. Demonstrating Deadlock Prevention:");
+        deadlockPrevention();
     }
 
     public static void threadInterruptionExample() throws InterruptedException {
