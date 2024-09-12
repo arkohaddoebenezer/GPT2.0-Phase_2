@@ -1,4 +1,5 @@
 package ProducerConsumer;
+
 import java.util.concurrent.BlockingQueue;
 
 class BlockingQueueProducer implements Runnable {
@@ -13,7 +14,7 @@ class BlockingQueueProducer implements Runnable {
             for (int i = 1; i <= 5; i++) {
                 queue.put(i);
                 System.out.println("BlockingQueue Produced: " + i);
-                Thread.sleep(100); // Simulating some delay
+                Thread.sleep(100);
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
